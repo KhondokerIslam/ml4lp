@@ -3,8 +3,6 @@ import argparse
 from pprint import pprint
 import torch
 import os
-from byprot import utils
-from byprot.models.lm.cfp_gen import CondDiffusionProteinLanguageModel
 import pandas as pd
 from omegaconf import DictConfig
 import pyrootutils
@@ -16,6 +14,10 @@ import time
 import multiprocessing as mp
 from torch.cuda.amp import autocast
 import traceback
+
+import sys; sys.path.append("src")
+from byprot import utils
+from byprot.models.lm.cfp_gen import CondDiffusionProteinLanguageModel
 
 def set_seed(seed):
     random.seed(seed)

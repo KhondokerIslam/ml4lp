@@ -10,10 +10,10 @@ num_seqs: 1
 seq_lens: [200, 400]  # for general proteins
 #seq_lens: [300, 500]  # for enzyme dataset
 
-use_go: true
+use_go: false
 use_ipr: true
 use_ec: false
-use_seq_motif: true
+use_seq_motif: false
 motif_min: 10
 motif_max: 30
 
