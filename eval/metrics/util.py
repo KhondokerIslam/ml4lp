@@ -4,12 +4,14 @@ import numpy as np
 
 amino_acid_alphabet = 'ARNDCEQGHILKMFPSTWYV'
 
-PATH = '/home/yinj0b/repository/proteogan/data/'
+# PATH = '/home/yinj0b/repository/proteogan/data/'
+
+PATH = 'E:/Masters/UdS/Semester_1/MLP/paper/code/ml4lp/data-bin/uniprotKB/proteogan'
 
 # PATH = os.path.dirname(os.path.realpath(__file__))
 
 with open(PATH+'/labels.txt') as file:
-    labels = file.read().split()
+    labels = file.read().split() # contains go labels:
 
 seq_tokens = list('-'+amino_acid_alphabet)
 label_tokens = labels+['<PAD>']
