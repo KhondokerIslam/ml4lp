@@ -63,7 +63,7 @@ def expand_gt_for_generated(generated_data, gt_data):
             expanded_gt_labels.append({
                 'go': matching_gt['go_numbers']['F'],
                 'ipr': matching_gt['ipr_numbers'],
-                'ec': matching_gt['EC_number'],
+                # 'ec': matching_gt['EC_number'],
             })
             expanded_gt_ids.append(gen_id)
 
