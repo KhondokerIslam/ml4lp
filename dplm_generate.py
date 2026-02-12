@@ -7,11 +7,13 @@ from pprint import pprint
 import torch
 import os
 import pickle
-from byprot import utils
-from byprot.models.lm.dplm import DiffusionProteinLanguageModel
 
 import random
 from tqdm import tqdm
+
+import sys; sys.path.append("src")
+from byprot import utils
+from byprot.models.lm.dplm import DiffusionProteinLanguageModel
 
 
 def format_check(args):
