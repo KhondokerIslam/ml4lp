@@ -64,7 +64,7 @@ The [GO/IPR mapping info](https://drive.google.com/drive/folders/1Z6Zmjy1h41rk_L
 
 ### Notes:
 
-- ```cfpgen-650m```: Support conditioning on GO terms, IPR domains and sequence motifs (e.g., 10-30 residue fragments) defined by our **general protein dataset**. This model can be readily used for _Functional Protein Generation_.
+- ```cfpgen-650m```: Support conditioning on GO terms, IPR domains and sequence motifs (e.g., 10-30 residue fragments) defined by the **general protein dataset**. This model can be readily used for _Functional Protein Generation_.
 
 - ```dplm-650m```: This is the base pretrained model from DPLM, required to be placed under ```cfpgen/pretrained/```.
 
