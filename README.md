@@ -30,9 +30,6 @@ This work is built directly on top of the official CFP-GEN implementation.
  Evaluation using Mean Reciprocal Rank (MRR), and Maximum Mean Discrepancy (MMD), reveals that although CFP-GEN maintains comparable ranking performance, it does not outperform—and sometimes underperforms—the unconditional baseline in distributional alignment for long sequences. Performance degradation increases with sequence length for both models. These findings suggest that incorporating biological constraints alone does not resolve long-context generation challenges in PLMs.
 
 ## CFP-Gen 🌟
-Please refer to CFP-GEN [paper](https://arxiv.org/pdf/2505.22869) and their respective [repository](https://github.com/yinjunbo/cfpgen) for better more context of this task. Also refer to my [term paper](./asset/term_paper.pdf) for understanding my work.
-
-
 ## Installation
 
 ```bash
