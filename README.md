@@ -27,9 +27,48 @@ This work is built directly on top of the official CFP-GEN implementation.
 
  Protein language models (PLMs) have achieved remarkable progress in discriminative and generative protein modeling, especially under biologically meaningful constraints such as InterPro (IPR) domains and Gene Ontology (GO) terms. Multi-constraint diffusion-based frameworks such as CFP-GEN demonstrate state-of-the-art performance on standard benchmarks. However, their ability to generalize to **long protein sequence generation (>1,000 residues)** remains largely unexplored, despite the biological relevance of large multi-domain proteins. In this work, I systematically evaluate CFP-GEN on long-sequence conditional generation using a curated Swiss-Prot dataset (1,000–2,000 residues). I compare it against its unconditional backbone (DPLM) under controlled IPR constraints.
 
- Evaluation using Mean Reciprocal Rank (MRR), and Maximum Mean Discrepancy (MMD), reveals that although CFP-GEN maintains comparable ranking performance, it does not outperform—and sometimes underperforms—the unconditional baseline in distributional alignment for long sequences. Performance degradation increases with sequence length for both models. These findings suggest that incorporating biological constraints alone does not resolve long-context generation challenges in PLMs.
+Evaluation using Mean Reciprocal Rank (MRR) and Maximum Mean Discrepancy (MMD) shows that CFP-GEN does not perform as well as the unconditional baseline in terms of distributional alignment for long sequences (refer to <a href="#table-1">Table 1</a>). Additionally, as the sequence length increases, both models experience a decline in performance (see <a href="#figure-1">Figure 1</a>). These findings suggest a better solution to resolve long-context generation challenges in Language Models as a whole.
 
-## CFP-Gen 🌟
+## Result
+<a id="table-1"></a>
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Model</th>
+    <th>MRR ↑</th>
+    <th>MMD ↓</th>
+  </tr>
+  <tr>
+    <td>DPLM (Uncondition)</td>
+    <td>0.007</td>
+    <td><strong>0.324</strong></td>
+  </tr>
+  <tr>
+    <td>CFP-GEN</td>
+    <td>0.007</td>
+    <td>0.466</td>
+  </tr>
+</table>
+
+<p><em>Table 1: MRR and MMD for the baseline and CFP-GEN model.</em></p>
+
+</div>
+
+<br>
+
+## Findings
+
+<a id="figure-1"></a>
+
+<p align="center">
+  <img src="./assets/mmd_ipr.png" alt="Findings-CFP-Gen" width="500"/>
+</p>
+
+<p align="center"><em>Figure 1: Scatter plot distribution of CFP-GEN and DPLM across sequence lengths.</em></p>
+
+## CFP-Gen
 ## Installation
 
 ```bash
