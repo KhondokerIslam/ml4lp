@@ -81,11 +81,8 @@ env_name=cfpgen
 conda create -n ${env_name} python=3.9 pip
 conda activate ${env_name}
 
-# automatically install everything else
-bash install.sh
-
 # alternative
-pip install -r  requirement.txt
+pip install -r  requirements.txt
 ```
 
 
