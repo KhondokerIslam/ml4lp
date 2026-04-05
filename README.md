@@ -115,7 +115,7 @@ configs/test_cfpgen.yaml
 and then run the following command to start generation:
 
 ```bash
-python cfp_generate.py
+python cfpgen_generate.py
 ```
 The results will be saved in `./generation-results`.
 
